@@ -23,6 +23,51 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Platilla_amor{
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.love{
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  background: blueviolet;
+  transform: rotate(45deg);
+  animation: pulso 0.7s infinite alternate ease-in-out;
+}
+
+
+.love::before,
+.love::after{
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: blueviolet; 
+  display: block;
+}
+
+.love::before{
+  margin-top: -50px;
+}
+
+.love::after{
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+@keyframes pulso{
+  to{
+    transform: rotate(45deg) scale(1.5);
+  }
+}
 
 .App-link {
   color: #61dafb;
